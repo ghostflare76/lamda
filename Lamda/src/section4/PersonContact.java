@@ -7,7 +7,7 @@ import section2.Person;
 
 public class PersonContact {
 	
-	public void checkOld(List<Person> p1, Predicate<Person> pred) {
+	public void checkAge(List<Person> p1, Predicate<Person> pred) {
 		for (Person p : p1) {
 			if (pred.test(p)) {
 				call(p);
@@ -15,13 +15,7 @@ public class PersonContact {
 		}
 	}
 
-	public void checkYoungMan(List<Person> p1, Predicate<Person> pred) {
-		for (Person p : p1) {
-			if (pred.test(p)) {
-				call(p);
-			}
-		}
-	}
+
 
 	public void call(Person p) {
 		System.out.println(p.toString());

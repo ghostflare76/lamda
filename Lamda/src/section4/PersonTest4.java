@@ -16,10 +16,10 @@ public class PersonTest4 {
 		Predicate<Person> isYoungMan = p -> p.getAge() >= 20 && p.getAge() <= 29 && p.getGender() == Gender.MALE;
 		
 		System.out.println("50 over");
-		personContact.checkOld(pl, isOld);
+		personContact.checkAge(pl, isOld);
 		
 		System.out.println("20 over");
-		personContact.checkYoungMan(pl, isYoungMan);
+		personContact.checkAge(pl, isYoungMan);
 	}
 
 }
